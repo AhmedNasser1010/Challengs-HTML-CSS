@@ -1,0 +1,154 @@
+* {
+	font-family: monospace;
+	box-sizing: border-box;
+}
+
+/* Challenge Grid */
+
+.grid-test .page {
+	background-color: #EEE;
+	margin: 10px auto;
+	padding: 40px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas: 
+	"a a b c"
+	"d e e c"
+	"d h h c"
+	"i j k l";
+}
+
+.grid-test .page
+div {
+    padding: 20px;
+    border-bottom: 3px solid #f7825c;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25px 35px 28% auto;
+}
+
+
+
+.name {
+	font-weight: bold;
+	font-size: 15px;
+	grid-row: 1/2;
+}
+
+.skill {
+    grid-row: 2/3;
+    font-weight: 900;
+    opacity: 40%;
+    font-size: 13px;
+}
+
+.text-1 {
+	font-weight: bold;
+
+}
+
+.text-2 {
+}
+
+.Q {
+    font-family: sans-serif;
+    font-size: 45px;
+    position: absolute;
+    bottom: -22px;
+    right: 10px;
+    transform: rotate(16deg);
+    opacity: 30%;
+}
+
+.grid-test .page
+.osama-mohamed {
+	grid-area: a;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background-color: white;
+}
+
+.grid-test .page
+.ahmed-sayed {
+	grid-area: b;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background-color: white;
+	grid-template-rows: 25px 35px 28% auto;
+}
+
+.grid-test .page
+.shady-nabil {
+	grid-area: c;
+	grid-row-start: 1;
+	grid-row-end: 7;
+	background-color: black;
+	color: white;
+	grid-template-rows: 25px 50px 18% auto;
+}
+
+.grid-test .page
+.mohamed-ibrahim {
+	grid-area: d;
+	grid-row-start: 3;
+	grid-row-end: 7;
+	background-color: white;
+	grid-template-rows: 42px 40px 26% auto;
+}
+
+.grid-test .page
+.mahmuod-mohamed {
+	grid-area: e;
+	grid-row-start: 3;
+	grid-row-end: 5;
+	background-color: black;
+	color: white;
+}
+
+.grid-test .page
+.ezz-elbin {
+	grid-area: h;
+	grid-row-start: 5;
+	grid-row-end: 7;
+	background-color: white;
+}
+
+.grid-test .page
+.mohamed-sayed {
+	grid-area: i;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-color: white;
+	grid-template-rows: 14% 15% 38% auto;
+}
+
+.grid-test .page
+.ibrahim-sayed {
+	grid-area: j;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-color: black;
+	color: white;
+	grid-template-rows: 14% 15% 38% auto;
+}
+
+.grid-test .page
+.gamal-sayed {
+	grid-area: k;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-color: white;
+	grid-template-rows: 14% 15% 38% auto;
+}
+
+.grid-test .page
+.eman-sayed {
+	grid-area: l;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-color: white;
+	grid-template-rows: 14% 15% 38% auto;
+}
